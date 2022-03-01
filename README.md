@@ -1,5 +1,9 @@
 # Just Tech News
 
+* Drops tables if changes are made
+making Sequelize create new tables if the data model or model associations have changed by using the command `sequelize.sync({force:true})` in the `server.js` file
+
+
 ## Tools
 `JawsDB` Add-On (Links to an external site.) is a Heroku add-on that provides a fully functional MySQL database server for use with your Heroku application.
 
@@ -32,6 +36,14 @@ Use `async` and `await` keywords to handle asynchronous functionality to increas
 
 Create user authentication that enables identity verification with a hashed password.
 
+Make associations to reflect relationships between models.
+
+Use `include` to JOIN associated table data in queries.
+
+Create API endpoints to execute CRUD on a Post.
+
+
+
 
 
 ## Steps
@@ -51,3 +63,6 @@ Use instance methods to compare user passwords in the login process.
 
 Create a login route for authentication.
 
+Create the `Post` model. Define the Post data model to declare the columns, data types, and validation.
+Define model associations. Declare the model’s relationships and the foreign key references.
+Create API routes for the Post model. Use RESTful APIs to allow the resources for the database to be accessible.
