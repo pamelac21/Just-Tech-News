@@ -1,0 +1,26 @@
+{
+  "name": "just-tech-news",
+  "version": "1.0.0",
+  "description": "`JawsDB` Add-On (Links to an external site.) is a Heroku add-on that provides a fully functional MySQL database server for use with your Heroku application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamelac21/Just-Tech-News.git"
+  },
+  "author": "Pamela Cleveland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pamelac21/Just-Tech-News/issues"
+  },
+  "homepage": "https://github.com/pamelac21/Just-Tech-News#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  }
+}
