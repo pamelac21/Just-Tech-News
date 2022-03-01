@@ -22,7 +22,15 @@ Use environment variables to protect sensitive data.
 Create a user table using Sequelize models.
 
 Create all of the server endpoints using RESTful API standards to work with the `User` model’s data.
+* (Nice work setting up your first Express.js API using Sequelize! We created a data model for the user and built the server endpoints using RESTful APIs. The User data model enables the application to create and manipulate user data. Now users can maintain authorship of their posts, comments, and votes by logging into the website with their personal credentials, such as email and password.)
 
+Secure user passwords stored in a database with hashing.
+
+Add Sequelize hooks (lifecycle events) at key junctures in the application workflow to process important tasks
+
+Use `async` and `await` keywords to handle asynchronous functionality to increase legibility.
+
+Create user authentication that enables identity verification with a hashed password.
 
 
 
@@ -34,3 +42,12 @@ Set up API routes to work with that data.
 Test the routes to make sure everything works as intended.
 
 Repeat with new model.
+
+Incorporate a password hashing algorithm package to encode stored user passwords.
+
+Intervene during the create and update operations using hooks in the model.
+
+Use instance methods to compare user passwords in the login process.
+
+Create a login route for authentication.
+
