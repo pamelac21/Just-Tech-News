@@ -3,6 +3,8 @@
 * Drops tables if changes are made
 making Sequelize create new tables if the data model or model associations have changed by using the command `sequelize.sync({force:true})` in the `server.js` file
 
+* IMPORTANT!!! Make sure this PUT route is defined before the `/:id` PUT route, though. Otherwise, Express.js will think the word "upvote" is a valid parameter for `/:id`.
+
 
 ## Tools
 `JawsDB` Add-On (Links to an external site.) is a Heroku add-on that provides a fully functional MySQL database server for use with your Heroku application.
@@ -42,6 +44,16 @@ Use `include` to JOIN associated table data in queries.
 
 Create API endpoints to execute CRUD on a Post.
 
+Create a new Vote model to store data about who is voting on which posts.
+
+Implement a many-to-many model association using Sequelize.
+
+Create a route allowing a user to vote on a post.
+
+Update existing routes to query for related data to see who has voted on what post.
+
+Clean up some of the code with a custom static Sequelize model method.
+
 
 
 
@@ -66,3 +78,8 @@ Create a login route for authentication.
 Create the `Post` model. Define the Post data model to declare the columns, data types, and validation.
 Define model associations. Declare the model’s relationships and the foreign key references.
 Create API routes for the Post model. Use RESTful APIs to allow the resources for the database to be accessible.
+
+Create the Vote model. We’ll create the Vote model that will hold data connecting the User and Post models and create the relationship between them.
+Create PUT route for voting on a post. We’ll create a route that updates a post by adding a vote to it.
+Update GET routes to include votes. We’ll edit some of the queries to include data for related votes.
+Refactor messy code. Some of the routes may look a little busy after adding this new code, so let’s use a Sequelize feature to clean it up. (Before we can create or update any routes to include vote data, we need to create the Vote model to hold data connecting the User and Post models. Once we’ve created this model, we should first create a route to update a post by adding a vote to it. Then we can update the GET routes to return the vote data. Finally, we’ll use a Sequelize feature to clean up the code.)
