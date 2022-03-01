@@ -15,3 +15,6 @@ app.use(routes);
 sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+//  ⬢ stormy-castle-82971
+https://stormy-castle-82971.herokuapp.com/ | https://git.heroku.com/stormy-castle-82971.git
